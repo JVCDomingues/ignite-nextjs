@@ -9,8 +9,6 @@ import styles from './styles.module.scss';
 const SignInButton: React.FC = () => {
   const { data: sessionData, status } = useSession();
 
-  console.log(sessionData);
-
   return status === 'authenticated' ? (
     <button 
       type="button"
